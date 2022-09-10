@@ -9,19 +9,46 @@ import ProfilePage from "./pages/ProfilePage";
 import StyledBottomNavigation from "./ui/StyledBottomNavigation";
 import AuthenRoute from "./routes/authen.route";
 import styled from "styled-components";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 const Container = styled.div`
   margin-top: 20px;
   text-align: center;
+  background-color: lightgrey;
+  min-height: 100vh;
 `;
+
+const theme = createTheme();
+
+theme.typography.h2 = {
+  fontSize: "26px",
+  fontWeight: 500,
+};
+theme.typography.h3 = {
+  fontSize: "22px",
+  fontWeight: 500,
+};
+theme.typography.h4 = {
+  fontSize: "18px",
+  fontWeight: 300,
+};
+theme.typography.h5 = {
+  fontSize: "14px",
+};
+theme.typography.h6 = {
+  fontSize: "12px",
+  fontWeight: 200,
+};
 
 function App() {
   return (
     <Container>
-      {/* <Routes> */}
+      <ThemeProvider theme={theme}>
+        {/* <Routes> */}
         <MainRoute />
         <AuthenRoute />
-      {/* </Routes> */}
+        {/* </Routes> */}
+      </ThemeProvider>
     </Container>
   );
 }
