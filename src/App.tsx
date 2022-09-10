@@ -34,6 +34,7 @@ theme.typography.h4 = {
 };
 theme.typography.h5 = {
   fontSize: "14px",
+  fontWeight: 300,
 };
 theme.typography.h6 = {
   fontSize: "12px",

@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import CompanyInfoPage from "../pages/CompanyInfoPage";
 import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/LoginPage";
 import MessagePage from "../pages/MessagePage";
@@ -14,6 +15,7 @@ const MainRoute = () => {
         <Route path="message" element={<MessagePage />} />
         <Route path="profile" element={<ProfilePage />} />
       </Route>
+      <Route path="company/info" element={<CompanyInfoPage />} />  
     </Routes>
   );
 };

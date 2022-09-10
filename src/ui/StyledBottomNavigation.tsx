@@ -27,6 +27,12 @@ const StyledBottomNavigation: React.FC<{ children?: React.ReactNode }> = ({
           // sx={{ width: 500 }}
           value={currentPage}
           onChange={handleChange}
+          sx={{
+            bgcolor: "blue",
+            "& .Mui-selected, .Mui-selected > svg": {
+              color: "white",
+            },
+          }}
         >
           <BottomNavigationAction
             label="Home"
