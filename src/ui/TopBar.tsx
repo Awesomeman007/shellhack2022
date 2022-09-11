@@ -24,7 +24,15 @@ const Input = styled.input`
   padding: 0 15px;
 `;
 
-const TopBar = () => {
+interface TopBarInterface {
+  searchKeyWord?: string;
+  setSearchKeyWord?: (searchKeyWord: string) => void
+}
+
+const TopBar: React.FC<TopBarInterface> = ({searchKeyWord, setSearchKeyWord}) => {
+  const handleChange = (event: any) => {
+    setSearchKeyWord !== undefined ? setSearchKeyWord(event.target.value) : <></>
+  }
   return (
     <>
       <Container>
@@ -33,7 +41,7 @@ const TopBar = () => {
             <img src={logo} width="50%"/>
           </Grid>
           <Grid item xs={8}>
-            <Input placeholder="Search Jobs, Employers here"/>
+            <Input placeholder="Search Jobs, Employers here" value={searchKeyWord} onChange={handleChange} />
           </Grid>
           <Grid item xs={2}>
             <FilterAltIcon color="disabled" fontSize="large" />
