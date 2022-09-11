@@ -44,10 +44,7 @@ function App() {
   return (
     <Container>
       <ThemeProvider theme={theme}>
-        {/* <Routes> */}
         <MainRoute />
-        <AuthenRoute />
-        {/* </Routes> */}
       </ThemeProvider>
     </Container>
   );
