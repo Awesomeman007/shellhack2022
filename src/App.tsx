@@ -47,7 +47,7 @@ function App() {
       <ThemeProvider theme={theme}>
         {/* <Routes> */}
         <MainRoute />
-        <AuthenRoute />
+        {/* <AuthenRoute /> */}
         {/* </Routes> */}
       </ThemeProvider>
     </Container>
