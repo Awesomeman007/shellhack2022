@@ -8,8 +8,7 @@ import styled from 'styled-components'
 import UnstyledLink from "../ui/UnstyledLink";
 
 const Container = styled.div`
-  margin: 100px 0 0 0;
-  padding-bottom: 50px;
+  padding: 100px 0 50px 0;
 `
 
 const HomePage = () => {

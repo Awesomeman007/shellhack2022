@@ -1,7 +1,12 @@
+import restaurant from "../assets/restaurant.jpeg"
+import pablos from "../assets/pablos.png"
+import paint from "../assets/paint.png"
+import bablos from "../assets/bablos.png"
+
 export const jobs = [
     {
         companyName: "Toto Japanese Restaurant",
-        logo: "",
+        logo: `${restaurant}`,
         jobTitle: "Server - Female",
         location: "Miami",
         salary: "15/hr",
@@ -9,7 +14,7 @@ export const jobs = [
     },
     {
         companyName: "Toto Japanese Restaurant",
-        logo: "",
+        logo: `${restaurant}`,
         jobTitle: "Cashier - Male",
         location: "Miami",
         salary: "18/hr",
@@ -17,7 +22,7 @@ export const jobs = [
     },
     {
         companyName: "Pablos Paint hut!",
-        logo: "",
+        logo: `${pablos}`,
         jobTitle: "Painter",
         location: "Earth",
         salary: "90000/hr",
@@ -25,7 +30,7 @@ export const jobs = [
     },
     {
         companyName: "Bablos",
-        logo: "",
+        logo: `${bablos}`,
         jobTitle: "Janitor - Male/Female",
         location: "Moon",
         salary: "50000/hr",
@@ -33,7 +38,7 @@ export const jobs = [
     },
     {
         companyName: "Pablos hut!",
-        logo: "",
+        logo: `${pablos}`,
         jobTitle: "Server",
         location: "Earth",
         salary: "90000/hr",
@@ -41,7 +46,7 @@ export const jobs = [
     },
     {
         companyName: "Paint hut!",
-        logo: "",
+        logo: `${paint}`,
         jobTitle: "Maid - Female",
         location: "Earth",
         salary: "90000/hr",

@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/LoginPage";
 import MessagePage from "../pages/MessagePage";
 import ProfilePage from "../pages/ProfilePage";
+import SearchPage from "../pages/SearchPage";
 import StyledBottomNavigation from "../ui/StyledBottomNavigation";
 
 const MainRoute = () => {
@@ -15,7 +16,8 @@ const MainRoute = () => {
         <Route path="message" element={<MessagePage />} />
         <Route path="profile" element={<ProfilePage />} />
       </Route>
-      <Route path="company/info" element={<CompanyInfoPage />} />  
+      <Route path="company/info" element={<CompanyInfoPage />} />
+      <Route path="search" element={<SearchPage />} />
     </Routes>
   );
 };

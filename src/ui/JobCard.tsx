@@ -3,11 +3,11 @@ import React from "react";
 import styled from "styled-components";
 import Colors from "../constants/colors";
 
-const Profile = styled.div`
+const Profile = styled.img`
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: ${Colors.lightgrey};
+  object-fit: cover;
 `;
 
 interface JobCardInterface {
@@ -25,7 +25,7 @@ const JobCard: React.FC<JobCardInterface> = (props: JobCardInterface) => {
       {/* <Container> */}
       <Grid container alignItems="center" spacing={2} mb="10px">
         <Grid item>
-          <Profile />
+          <Profile src={props.logo} />
         </Grid>
         <Grid item>
             <Typography variant="h6">{props.companyName}</Typography>
