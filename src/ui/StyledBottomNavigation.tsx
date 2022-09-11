@@ -11,7 +11,7 @@ const StyledBottomNavigation: React.FC<{ children?: React.ReactNode }> = ({
 
   const handleChange = (event: React.SyntheticEvent, newPage: string) => {
     setCurrentPage(newPage);
-    newPage === "home" ? navigate("/") : navigate(`/${newPage}`);
+    navigate(`/${newPage}`);
   };
 
   return (
