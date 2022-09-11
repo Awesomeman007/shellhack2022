@@ -19,7 +19,7 @@ const MainRoute = () => {
   return (
     <Routes>
       <Route path="/" element={<StyledBottomNavigation />}>
-        <Route index element={<HomePage />} />
+        <Route path="home" element={<HomePage />} />
         <Route path="message" element={<MessagePage />} />
         <Route path="profile" element={<ProfilePage />} />
       </Route>
