@@ -87,7 +87,7 @@ const CompanyInfoPage = () => {
       >
         <Tab value="location" label="Location" />
         <Tab value="review" label="Reviews" />
-        <Tab value="benifit" label="Benefits" />
+        <Tab value="benefit" label="Benefits" />
         <Tab value="position" label="Positions" />
         <Tab value="contact" label="Contacts" />
       </Tabs>

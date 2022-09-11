@@ -3,7 +3,9 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Profile = styled.div`
-
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
 `
 
 const JobCard = () => {
@@ -14,14 +16,14 @@ const JobCard = () => {
                 <Typography variant="h5" textAlign="left">- Company Name</Typography>
                 <Typography variant="h5" textAlign="left">- Location</Typography>
                 <Typography variant="h5" textAlign="left">- Salary</Typography>
-                <Grid container spacing={2}>
+                {/* <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <Button variant="outlined" fullWidth>Save</Button>
                     </Grid>
                     <Grid item xs={6}>
                         <Button variant="contained" fullWidth>Apply</Button>
                     </Grid>
-                </Grid>
+                </Grid> */}
             {/* </Container> */}
         </Box>
     )
