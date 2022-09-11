@@ -8,10 +8,12 @@ import Benefit from "./benefit";
 import Position from "./position";
 import Contact from "./contact";
 import Review from "./review";
+import restaurant from "../../assets/restaurant.jpeg"
 
-const Picture = styled.div`
+const Picture = styled.img`
   height: 300px;
   width: 100vw;
+  object-fit: cover;
   background-color: ${Colors.lightgrey};
 `;
 
@@ -44,7 +46,7 @@ const CompanyInfoPage = () => {
 
   return (
     <>
-      <Picture />
+      <Picture src={restaurant} />
       <Box p="10px" bgcolor="white">
         <Typography variant="h3" textAlign="left">
           Toto Japanese Restaurant
@@ -64,20 +66,6 @@ const CompanyInfoPage = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Typography>
       </Box>
-      {/* <Box p="10px" my="10px" bgcolor="white">
-        <Typography variant="h4" textAlign="left">
-          What other people say about this company
-        </Typography>
-        <Typography variant="h5" textAlign="left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Typography>
-      </Box> */}
       <Tabs
         value={currentTab}
         onChange={handleChange}

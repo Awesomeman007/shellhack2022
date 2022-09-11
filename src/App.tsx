@@ -12,7 +12,6 @@ import styled from "styled-components";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const Container = styled.div`
-  margin-top: 20px;
   text-align: center;
   background-color: lightgrey;
   min-height: 100vh;
