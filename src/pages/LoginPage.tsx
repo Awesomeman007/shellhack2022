@@ -21,7 +21,7 @@ const LoginPage = () => {
   const onSubmit = (data: LoginInterface) => {
     console.log(data);
     if (data.phoneNumber === "0000000000" && data.password === "0000")
-      navigate("/");
+      navigate("/home");
   };
 
   return (

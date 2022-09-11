@@ -26,7 +26,7 @@ const MainRoute = () => {
       <Route path="company/info" element={<CompanyInfoPage />} />
       <Route path="search" element={<SearchPage />} />
       <Route
-        path="landing"
+        index
         element={
           <Container>
             <LandingPage />

@@ -7,7 +7,6 @@ import MainRoute from "./routes/index.route";
 import MessagePage from "./pages/MessagePage";
 import ProfilePage from "./pages/ProfilePage";
 import StyledBottomNavigation from "./ui/StyledBottomNavigation";
-import AuthenRoute from "./routes/authen.route";
 import styled from "styled-components";
 import { createTheme, ThemeProvider } from "@mui/material";
 
