@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
-  padding: 100px 10px 0 10px;
+  padding: 120px 10px 0 10px;
 `;
 
 interface LoginInterface {
@@ -26,7 +26,7 @@ const LoginPage = () => {
 
   return (
     <Container>
-      <Typography variant="h3" textAlign="left">
+      <Typography variant="h2" textAlign="left">
         Login
       </Typography>
       <form>
