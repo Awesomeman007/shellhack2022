@@ -118,7 +118,7 @@ const ProfilePage = () => {
         </Typography>
       </Box>
 
-      <UnstyledLink to="/landing">
+      <UnstyledLink to="/">
         <Box bgcolor="white" p={2} my={1}>
           <Typography
             variant="h4"
