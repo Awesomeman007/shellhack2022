@@ -10,12 +10,18 @@ import ProfilePage from "../pages/ProfilePage";
 import SearchPage from "../pages/SearchPage";
 import StyledBottomNavigation from "../ui/StyledBottomNavigation";
 
+
 const Container = styled.div`
   height: 100vh;
   background-color: white;
 `;
 
 const MainRoute = () => {
+  const Container = styled.div`
+    height: 100vh;
+    background-color: white;
+  `;
+
   return (
     <Routes>
       <Route path="/" element={<StyledBottomNavigation />}>
