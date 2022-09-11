@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/205a1414-302d-4f1c-b2a6-eeff584a31af/microsoft.web/sites/subscriptions/205a1414-302d-4f1c-b2a6-eeff584a31af/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Saphire2022",
+    "appService.deploySubpath": "."
+}
